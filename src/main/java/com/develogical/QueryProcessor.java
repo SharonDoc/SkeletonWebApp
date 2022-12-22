@@ -15,7 +15,13 @@ public class QueryProcessor {
                     "writer in the English language and the world's pre-eminent dramatist.";
         }
 
+       else if (query.toLowerCase().contains("what time is it")) {
+            return "I am not a clock, please look at your watch, don't ask again";
+        }
+
         return "";
     }
+
+
     
 }
