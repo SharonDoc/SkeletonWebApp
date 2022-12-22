@@ -19,9 +19,18 @@ public class QueryProcessor {
             return "SharonTest";
         }
 
+      if(query.contains("what is")) {
+
+       //   String intValue = query.replaceAll("[^0-9]", "");
+          String[] strArray= query.split(" ");
+          int[] integerArray =new int[strArray.length];
+          return String.valueOf((integerArray [0] + integerArray[1]));
+
+      }
+
         return "";
     }
 
-
+//Which of the following numbers is the largest: 70, 4, 48?
     
 }
