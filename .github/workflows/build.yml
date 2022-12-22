@@ -16,7 +16,7 @@ jobs:
       - name: Build with Maven
         run: mvn --batch-mode --update-snapshots verify
 
-    deploy:
+  deploy:
       runs-on: ubuntu-latest
       needs: build
       steps:
